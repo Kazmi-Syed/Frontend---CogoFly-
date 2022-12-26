@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogoFly</title>
+    <!-- Coomon Imports/Linkings  -->
+    <link rel="stylesheet" href="./stylesheets/Footer.css">
+    <link rel="stylesheet" href="./stylesheets/NormalNav.css">
+    <script src="./javascript/navMenu.js"></script>
+</head>
+<body>
+    <style>
+         @font-face {
+            font-family: "Nunito-sans";
+            src: url('./fonts/NunitoSans/NunitoSans-Regular.ttf');
+        }
+       
+        #carousel{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 30px 750px 30px;
+            overflow: hidden;
+        }
+        #carousel button{
+            border: none;
+            outline: none;
+            color: #888888;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        #carousel button:hover{
+            cursor: pointer;
+            color: #6e6e6e;
+        }
+        #carousel:nth-child(2){
+            grid-column: 1 ;
+        }
+        #carousel video,#carousel img {
+            border-radius: 30px;
+            box-shadow: 1px 4px 6px gray;
+        }
+        #carin{
+            max-width: 750px;
+            max-height: 398px;
+            height: 363px;
+            overflow: hidden;
+        }
+
+        #incar{
+            grid-column: 2;
+            max-height:360px ;
+            transition: 500ms ease-in-out;
+        }
+
+        #incar, #incar > *{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            min-width: 750px;
+        }
+        
+        #incar > *{
+            padding: 10px;
+            width: 750px;
+            height: 352px;
+            justify-content: space-between;
+        }
+
+        #vid{
+            display: flex;
+            justify-content: center;
+        }
+        #tpcs{
+            display: grid;
+            grid-template-columns: 1fr 1fr;   
+        }
+        #tpcs img{
+            width: 350px;
+            height: inherit;
+            object-fit: fill;
+        }
+
+        #tpcs> *{
+            border-radius: 30px;
+        }
+        #tpcs:first-child{
+
+            grid-column: 1/2;
+        }
+        #tpcs:nth-child(2){
+            grid-column: 3/4;
+        }
+
+        .tximg{
+            overflow: hidden;
+            width: 352px;
+            border-radius: inherit;
+            height: inherit;
+            position: relative;
+            margin: 0px;
+            border-radius: 30px;
+        }
+
+        .tximg div{
+            height: 155px;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-between;
+            
+        }
+
+        .tximg h3{
+            background: rgba(53, 44, 44, 0.111);
+            color: white;
+            margin: 0px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: inherit;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 1px 5px #514040;
+
+        }
+
+        #wdact{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        #wdact .tximg{
+                overflow: hidden;
+            }    
+        #wdact img{
+            width: 350px;
+            height: inherit;
+            object-fit:fill;
+        }
+
+
+        #acts .tximg{
+            border-radius: initial;
+        }
+        
+        #acts{
+            width: 350px;
+            height: inherit;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        #acts img{
+            border-radius: 10px;
+            width: 167px;
+            height: 165px;
+        }
+        .tximg div{
+            height: 352px;
+        }
+        
+        @media (max-width:789px){
+            #carousel{
+                grid-template-columns: 30px 340px 30px;
+            }
+
+            #carin{
+                max-width: 340px;
+                height: 161px;
+                overflow: hidden;
+            }
+
+            #carousel video,#carousel img {
+            border-radius: 10px;
+            box-shadow: 1px 1px 6px gray;
+            }
+
+            #incar{
+                max-height:190px;
+            }
+
+            #incar, #incar > *{
+                min-width: 340px;
+            }
+            
+            #incar > *{
+                padding: 5px;
+                width: 340px;
+                height: 150px;
+                justify-content: space-between;
+                border-radius: 10px;
+            }
+
+            #vid{
+                justify-content: center;
+            }
+
+            #vid video{
+                width: 262px;
+            }
+
+            #tpcs img{
+                border-radius: 10px;
+                width: 160px;
+                height: 160px;
+                object-fit: fill;
+            }
+
+            .tximg{
+                /* height: initial; */
+                width: 160px;
+            }
+            .tximg h3{
+                border-radius: 10px;
+                font-size: 10px;
+                height: 148px;
+                width: 160px;
+            }
+
+            .tximg > div{
+                height: 148px;
+            }
+                
+            #tpcs> *{
+                border-radius: 10px;
+            }
+
+    
+            #wdact img{
+                width: 160px;
+                height: 160px;
+                object-fit:fill;
+            }
+            
+            #acts{
+                width: 160px;
+                height: inherit;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: space-between;
+            }
+
+            #acts img{
+                width: 70px;
+                height: 70px;
+            }
+
+
+
+            
+        }
+    </style>
+
+    <script>
+        var b=0;
+        const carousel =(a)=>{
+            var x = document.getElementById("incar");
+            b = b+a;
+            b<0?  b = x.children.length + b  : b=b ;
+            var toMove = -((b)%x.children.length) * x.children[0].clientWidth
+            x.style.transform = "translateX("+ toMove + "px)"
+        }
+
+    </script>
+
+    <script>
+    </script>
+    
+        <nav>
+            <div id="logo">
+                <img src="./images/Logo.png" alt="">
+            </div>
+            <div id="ham" onclick="displayMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+           
+    
+                <ul>
+                    <li>Covid-19</li>
+                    <li>How It Works?</li>
+                    <img id="flag" src="./images/ukraine-flag.jpg" alt="">
+                    <li id="log">Log In</li>
+                    <li id="sign">Sign Up</li>
+                </ul>
+        </nav>
+        
+        <div id="carousel" style="margin-top: 150px;">
+            <button onclick="carousel(-1)"><</button>
+            <div id="carin">
+
+                <div id="incar">
+                    <div id="vid">
+                        <video src="./images/cogofly-genesis.mp4" autoplay></video>
+                    </div>
+                    
+                    <div id="tpcs">
+                        <div class="tximg">
+                            <img src="./images/bike-road.jpg" alt="">
+                            <h3 onmouseout="changeOriginal(this,'Don\'t be fazed by traveling anymore')" onmouseover="changeText(this,5)">Don't be fazed by traveling anymore</h3>
+                        </div>
+                        <div class="tximg">
+                            <img src="./images/hands.jpg" alt="">
+                            <h3 onmouseout="changeOriginal(this, 'Don\'t be fazed by traveling anymore' )" onmouseover="changeText(this,5)" >Find someone you can trust</h3>
+                        </div>
+                    </div>
+                    
+                    <div id="wdact">
+                        <div class="tximg">
+                            <img src="./images/steelwool.jpg" alt="">
+                            <h3>Discover a new way to get away</h3>
+                        </div>
+                        <div id="acts">
+                            <div class="tximg">
+                             <div >
+                                 <img src="./images/bike-road.jpg" alt="">
+                                 <img src="./images/hands.jpg" alt="">
+                                 <img src="./images/bike-road.jpg" alt="">
+                                 <img src="./images/hands.jpg" alt="">
+                             </div>   
+                             <h3 style="background: initial; color: black;">Share Various Activities</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="carousel(+1)">></button>
+
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    font-family: Lato;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: $BodyBG;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+label{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+input{
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 284px;
+    height: 34px;
+    padding: 0px 10px;
+    border: 1px solid $InputBorder;
+}
+input:focus{
+    border: 1px solid black;
+}
+
+button{
+    align-self: flex-end;
+    border: none;
+    font-family: "Nunito-sans";
+    color: white;
+    font-weight: 700;
+}

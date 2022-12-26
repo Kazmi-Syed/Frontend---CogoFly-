@@ -1,0 +1,110 @@
+footer{
+    width: 100vw;
+    background: #1877F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: white;
+
+}
+
+footer .ufoot{
+    
+    width: inherit;
+    padding: 49px 0px 0px 117px ;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+footer .ufoot .links{
+    margin-left: 75px;
+}
+
+#urbox{
+    margin-bottom: 46px;
+}
+
+#urbox ul{
+    list-style: none;
+
+}
+
+#urbox ul li{
+    display: inline-block;
+    margin-right: 44px;
+}
+
+#urbox ul li a{ 
+    color : inherit;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#ulbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#ulbox h3{
+    display: inline-block;
+}
+
+#icons img{
+    margin-right: 42px;
+}
+
+footer hr{
+    margin-top: 48px;
+}
+
+#dis{
+    padding: 15px 0px;
+}
+@media (max-width:1340px) {
+    footer .ufoot{
+        padding-left: 40px;
+    }
+    
+}
+
+@media (max-width:1259px){
+
+    footer .ufoot{
+        padding-right: 40px;
+        justify-content: center;
+    }
+    
+    footer .ufoot .links #urbox{
+        margin-top: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer .ufoot .links #urbox ul li{
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    footer .ufoot .links #ulbox{
+        justify-content: center;
+        margin-top: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+    footer .ufoot .links #ulbox #icons{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    footer .ufoot .links #ulbox #icons img{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoGoFly</title>
+    <!-- Coomon Imports/Linkings  -->
+    <link rel="stylesheet" href="./stylesheets/Footer.css">
+    <link rel="stylesheet" href="./stylesheets/NormalNav.css">
+    <script src="./javascript/navMenu.js"></script>
+    <!-- Embedding Fonts from the external URL -->
+
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: "Nunito-sans";
+            src: url('./fonts/NunitoSans/NunitoSans-Regular.ttf');
+        }
+        main{
+            padding:39px 112px 97px 112px;
+            background: #F3F8FF;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        main h1{
+            color: #141414;
+            font-weight: 800;
+            font-size: 42px;
+            line-height: 57px;
+        }
+
+        main .rite{
+            margin-left: 35px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text{
+            width: 656px;
+            
+        }
+        .left{
+            display: flex;
+            flex-wrap: wrap;   
+            align-items: flex-end; 
+        }
+        .left .texty{
+            display: flex;
+            flex-direction: column;
+        }
+        .text p{
+            color: #555555;
+            margin-top: 24px;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 24px;
+        }
+
+        @media (max-width : 886px) {
+            
+            .left{
+                justify-content: center;
+            }
+
+            .left .texty h1{
+                text-align: center;
+            }
+            main{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            main .rite{
+                margin-left: 0px;
+            }
+            main .rite img {
+                object-fit: cover;
+                width: 300px;
+            }
+
+            .text {
+                width: initial;
+            }
+        }
+
+        @media (max-width:1340px) {
+            footer .ufoot{
+                padding-left: 40px;
+            }
+            
+        }
+
+        @media (max-width:1259px){
+
+            footer .ufoot{
+                padding-right: 40px;
+                justify-content: center;
+            }
+            
+            footer .ufoot .links #urbox{
+                margin-top: 20px;
+                justify-content: center;
+                text-align: center;
+            }
+
+            footer .ufoot .links #urbox ul li{
+                margin-right: 30px;
+                margin-top: 20px;
+            }
+            footer .ufoot .links #ulbox{
+                justify-content: center;
+                margin-top: 20px;
+                text-align: center;
+                flex-direction: column;
+            }
+            footer .ufoot .links #ulbox #icons{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            footer .ufoot .links #ulbox #icons img{
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+
+    <!-- NavBAr -->
+    <nav>
+        <div id="logo">
+            <img src="./images/Logo.png" alt="">
+        </div>
+        <div id="ham" onclick="displayMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+            <ul id="meni">
+                <li><a href="#">Covid-19</a></li>
+                <li><a href="#">How It Works?</a></li>
+                <img id="flag" src="./images/ukraine-flag.jpg" alt="">
+                <li id="log">Log In</li>
+                <li id="sign">Sign Up</li>
+            </ul>
+    </nav>
+
+    <!-- Main Body -->
+    <main>
+        <div class="left">  
+            <div class="texty">
+                <h1>
+                    CoGoFly & Ukraine
+            </h1>
+            <div class="text">
+                
+                <p>
+                    CoGoFly wishes to express its solidarity with the Ukrainian people in their fight against the invasion.
+                </p><p>
+                    CoGoFly also thanks, and in advance, all the host families who came to the aid of this people forced, willingly or by force, to leave their beautiful country.
+                </p><p>
+                    CoGoFly, and its entire team, is therefore looking for a way to help these families and the Ukrainian people in general.
+                </p><p>
+                    Nothing has been more obvious to our international co-traveller platform than to help all Ukrainians who have arrived in their host countries to:
+                </p><p>
+                    Find people with the same interests.
+                </p><p>
+                    Nothing like this to facilitate integration in a new country...
+                </p>
+            </div>
+            </div>        
+                <div class="rite">
+                    <img src="./images/Group 357.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="left">
+            <div class="text">
+
+                <p>
+                    Practice various types of activities, sports and / or cultural, with city dwellers and possible neighbors.
+                </p><p>
+                    Learn the language of the host country by finding people who want to teach it to them.
+                </p><p>
+                    Leverage your skills, experiences, and love of your language.
+                </p><p>
+                    To travel together to discover the city, the region or even the host country.
+                </p><p>
+                    As you have understood, CoGoFly wanted and bet that all the peoples of the world will want to help and share the suffering of the Ukrainian people by trying to make you "forget", even for a moment, this painful period.
+                </p><p>
+                    CoGoFly is ready to help you for the duration of this war and even after... a true international community of travelers with the same common denominator: "Sharing" is there for you.
+                </p><p>
+                    Do not hesitate, do not wait any longer, and register for free on <a href="#">www.cogofly.com </a> 
+                </p><p></p>
+            </div>
+            <div class="rite">
+                <img style="margin-top: 23px;" src="./images/Group 358.png" alt="">
+            </div>
+        </div>
+                
+        
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="ufoot">
+            <div id="flog">
+                <img src="./images/Logo-footer.png" alt="">
+            </div>
+            <div class="links">
+                <div id="urbox">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">The Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Testimonies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">BlogTerms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+
+                </div>
+                <div id="ulbox">
+                    <h3>This is to share : </h3>
+                    <div id="icons">
+                        <img src="./images/Group 305.svg" alt="">
+                        <img src="./images/Group 283.svg" alt="">
+                        <img src="./images/Group 285.svg" alt="">
+                        <img src="./images/Group 297.svg" alt="">
+                        <img src="./images/Group 298.svg" alt="">
+                        <img src="./images/Group 299.svg" alt="">
+                        <img src="./images/Group 281-1.svg" alt="">
+                        <img src="./images/Group 281.svg" alt="">
+                        <img src="./images/Group 303.svg" alt="">
+                        <img src="./images/Group 300.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr style="height: 1px;width: inherit; background:#CFCFCF">
+
+        <div id="dis">
+            <h4>© Copyright 2022 - CoGoFly - All rights reserved</h4>
+        </div>
+        
+        
+    </footer>
+</body>
+</html>

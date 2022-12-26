@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins/Poppins-Light.ttf');
+
+}
+@font-face {
+    font-family: "Nunito-sans";
+    src: url('../fonts/NunitoSans/NunitoSans-Regular.ttf');
+
+}
+
+
+*{
+    font-family: Lato , sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+label{
+    line-height: 20px;
+    margin-left: 12px;
+}
+
+body{
+    background: #f3f3f3;
+    }
+
+input{
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 284px;
+    height: 34px;
+    padding: 0px 10px;
+    border: 1px solid #e7e7e7;
+}
+input:focus{
+    border: 1px solid black;
+}
+
+#frm{
+    padding: 48px 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#bc{
+    background: linear-gradient(146.37deg, #18F2B1 19.97%, #1877F2 81.7%);
+    padding: 24px 28px;
+    display: flex;
+    max-width: 712px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#bh{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 51px;
+}
+h1{
+    font-family: Poppins;
+    font-size: 26px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    width: 281px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid white;
+}
+
+p{
+    top: 37px;
+    right: 51px;
+    position: absolute;
+    float: right;
+}
+
+#bc img{
+    width: 100px;
+    height: 79px;
+    height: 100px;
+    border-radius: 17px;
+    object-fit: cover;
+}
+
+#bc .uflex, #bc .lflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bc .uflex .ul{
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+}
+#bc .uflex .ul label:nth-of-type(2){
+    margin-top: 42px;
+}
+
+#bc .uflex .ul input[type="text"]{
+    height: 34px;
+    padding: 12px;
+    width: 284px;
+}
+#bc .uflex .ul input[type="text"]::after{
+    display: block;
+    width: 284px;
+    height: 200px;
+    background: #000000;
+}
+    
+#bc .uflex .ur{
+    padding-top: 3px;
+    width: 309px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+.imjs{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cvr{
+    border: 1px solid #2D2D2D;
+    border-radius: 9px;
+    position: relative;
+    width: 317px;
+    height: 107px;
+    overflow: hidden;
+}
+
+
+#cvr:has(> textarea:focus){border: 1px solid black; }
+
+
+#cvr textarea{
+    font-style: italic;
+    border: none;
+    outline: none;
+    padding: 12px 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: inherit;
+    height: 250px;
+}
+.ll{
+    
+    margin-top: -3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ll label:nth-of-type(2){
+    margin-top: 19px;
+}
+button{
+    align-self: flex-end;
+    margin-right: 110px;
+    margin-top: 19px;
+    border: none;
+    font-family: "Nunito-sans";
+    color: white;
+    background: #18F2B1;
+    border-radius: 25px;
+    width: 152px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.ul section ul::-webkit-scrollbar-thumb{
+    background: rgb(114, 122, 114);
+    border-radius: 2px;
+}
+
+.ul section ul::-webkit-scrollbar{
+    width: 4px;
+    background: white;
+}
+.ul section ul{
+    height: fit-content;
+    
+    max-height: 100px;
+    overflow-y: scroll;
+    list-style: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.ul section{
+    position: relative;
+    width: 284px;
+    top: -7px;
+    background: white;
+    height: 0px;
+    max-height: 100px;
+    border-bottom: 1px solid black;
+    display:none;
+    z-index: 6;
+}
+
+.ul ul li:last-child{
+
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.ul ul li{
+    padding:5px 10px;
+    font-size: 11px;
+    background: white;
+    z-index: 5;
+
+}
+.ul ul li:hover{
+    background: #1877F2;
+    color: white;
+}
+.lr{
+    padding-top: 17px;
+}
+::-webkit-file-upload-button{
+    background: none;
+    border: none;
+    width: 100px;
+    max-width: 100px;
+    min-height: 79px;
+    max-height: 79px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imjs input{
+    height: 79px;
+    width: 100px;
+    border-radius: 17px;
+}
+
+.imjs > *{
+    margin-top: 17px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.imb{
+    position: relative;
+    width: 100px;
+    height: 79px;
+    border-radius: 17px;
+    background: #d9d9d9;
+    overflow: hidden;
+}
+.imb input:hover{
+    cursor: pointer;
+}
+.imb img{
+    margin-top: 0px;
+    position: absolute;
+    top: -19px;
+    left: 0;
+    z-index: 3;
+}
+
+.imb input{
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 79px;
+    min-height: 79px;
+    opacity: 0;
+    position: absolute;
+    width: 100px;
+    height: 79px;
+    z-index: 4;
+}
+.imb svg{
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.imb ::-webkit-file-upload-button:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width:372px){
+
+    label{
+        font-size: 12px;
+    }
+    #bc{
+        width: 100vw;
+        align-items: center;
+    }
+
+    #bc .uflex,#bc .lflex{
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        
+        width: min-content;
+        flex-wrap: wrap;
+    }
+
+    #bc .uflex .ul{
+        width: initial;
+    }
+    
+    #bh p{
+        right: 15px;
+    }
+
+    button{
+        align-self: initial;
+        margin-right: 0px;
+    }
+
+    #bc .ufle .ur{
+        margin-top: 20px;
+    }
+
+    #cvr{
+        width: 284px;
+    }
+}
+@media (min-width : 373px) and (max-width:642px){
+    #bc{
+        width: 90vw;
+        align-items: center;
+    }
+
+    #bc .uflex,#bc .lflex{
+        padding-top: 20px;
+        align-items: center;
+        justify-content: center;
+        
+        width: min-content;
+        flex-wrap: wrap;
+    }
+
+    #bc .uflex .ur{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #bc .uflex .ul{
+        width: initial;
+    }
+
+    #bh p{
+        right: 15px;
+    }
+
+    #cvr{
+        width: 284px;
+    }
+
+    button{
+        align-self: initial;
+        margin-right: 0px;
+    }
+}

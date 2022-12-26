@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./stylesheets/boardingcard.css">
+ <!-- Coomon Imports/Linkings  -->
+ <link rel="stylesheet" href="./stylesheets/Footer.css">
+ <link rel="stylesheet" href="./stylesheets/NormalNav.css">
+ <script src="./javascript/navMenu.js"></script>
+
+</head>
+<body>
+
+    <nav>
+        <div id="logo">
+            <img src="./images/Logo.png" alt="">
+        </div>
+        <div id="ham" onclick="displayMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+            <ul id="meni">
+                <li><a href="#">Covid-19</a></li>
+                <li><a href="#">How It Works?</a></li>
+                <img id="flag" src="./images/ukraine-flag.jpg" alt="">
+                <li id="log">Log In</li>
+                <li id="sign">Sign Up</li>
+            </ul>
+    </nav>
+
+
+    <script src="./javascript/RecommendingCities.js"></script>
+
+    <form action="#" method="post" id="frm" enctype="multipart/form-data">
+        <div id="bc">
+            <div id="bh">
+                <h1>
+                    Boarding Card
+                </h1>
+
+                <p onclick="history.back()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24"/>
+                    <rect width="1440" height="1024" transform="translate(-1009 -169)"/>
+                    <path d="M-670 -38H58V468H-670V-38Z" fill="url(#paint0_linear_0_1)"/>
+                    <path d="M7.13 18.3101H15.13C17.89 18.3101 20.13 16.0701 20.13 13.3101C20.13 10.5501 17.89 8.31006 15.13 8.31006H4.13" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.43 10.8099L3.87 8.24994L6.43 5.68994" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </p>
+            </div>
+
+            <div class="uflex">
+                <div class="ul">
+                    <label for="dep">Departure from</label>
+                    <input type="text" name="" id="dep"  onfocus="recDep(this , this.type , this.value)"  oninput="recDep(this , this.type , this.value)" ></input>
+                    <section class="rec auto"></section>
+                    
+                    <label for="des">Destination</label>
+                    <input type="text" name="" id="des" onfocus="recDes(this , this.type , this.value)" oninput="recDes(this , this.type , this.value)"></input>
+                    <section class="rec auto"></section>
+                </div>
+                <div class="ur">
+                    <div class="imjs">
+                        <div class="imb">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5714 7.46429H12.1429V1.35714C12.1429 0.607746 11.5031 0 10.7143 0H9.28571C8.49687 0 7.85714 0.607746 7.85714 1.35714V7.46429H1.42857C0.639732 7.46429 0 8.07203 0 8.82143V10.1786C0 10.928 0.639732 11.5357 1.42857 11.5357H7.85714V17.6429C7.85714 18.3923 8.49687 19 9.28571 19H10.7143C11.5031 19 12.1429 18.3923 12.1429 17.6429V11.5357H18.5714C19.3603 11.5357 20 10.928 20 10.1786V8.82143C20 8.07203 19.3603 7.46429 18.5714 7.46429Z" fill="#705F5F"/>
+                                </svg>
+                            <img class="if" src="" alt="">
+                            <input name="" type="file" accept="image/*" onchange="loadFill(event)" >
+                        </div>
+                        <div class="imb">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5714 7.46429H12.1429V1.35714C12.1429 0.607746 11.5031 0 10.7143 0H9.28571C8.49687 0 7.85714 0.607746 7.85714 1.35714V7.46429H1.42857C0.639732 7.46429 0 8.07203 0 8.82143V10.1786C0 10.928 0.639732 11.5357 1.42857 11.5357H7.85714V17.6429C7.85714 18.3923 8.49687 19 9.28571 19H10.7143C11.5031 19 12.1429 18.3923 12.1429 17.6429V11.5357H18.5714C19.3603 11.5357 20 10.928 20 10.1786V8.82143C20 8.07203 19.3603 7.46429 18.5714 7.46429Z" fill="#705F5F"/>
+                                </svg>
+                            <img class="if" src="" alt="">
+                            <input name="" type="file" accept="image/*" onchange="loadFill(event)">
+                        </div>
+                        <div class="imb">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5714 7.46429H12.1429V1.35714C12.1429 0.607746 11.5031 0 10.7143 0H9.28571C8.49687 0 7.85714 0.607746 7.85714 1.35714V7.46429H1.42857C0.639732 7.46429 0 8.07203 0 8.82143V10.1786C0 10.928 0.639732 11.5357 1.42857 11.5357H7.85714V17.6429C7.85714 18.3923 8.49687 19 9.28571 19H10.7143C11.5031 19 12.1429 18.3923 12.1429 17.6429V11.5357H18.5714C19.3603 11.5357 20 10.928 20 10.1786V8.82143C20 8.07203 19.3603 7.46429 18.5714 7.46429Z" fill="#705F5F"/>
+                                </svg>
+                            <img class="if" src="" alt="">
+                            <input name="" type="file" accept="image/*" onchange="loadFill(event)">
+                        </div>
+                    </div>
+                    <div  class="imjs">
+                        <div class="imb">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5714 7.46429H12.1429V1.35714C12.1429 0.607746 11.5031 0 10.7143 0H9.28571C8.49687 0 7.85714 0.607746 7.85714 1.35714V7.46429H1.42857C0.639732 7.46429 0 8.07203 0 8.82143V10.1786C0 10.928 0.639732 11.5357 1.42857 11.5357H7.85714V17.6429C7.85714 18.3923 8.49687 19 9.28571 19H10.7143C11.5031 19 12.1429 18.3923 12.1429 17.6429V11.5357H18.5714C19.3603 11.5357 20 10.928 20 10.1786V8.82143C20 8.07203 19.3603 7.46429 18.5714 7.46429Z" fill="#705F5F"/>
+                                </svg>
+                            <img class="if" src="" alt="">
+                            <input name="" type="file" accept="image/*" onchange="loadFill(event)" >
+                        </div>
+                        <div class="imb">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5714 7.46429H12.1429V1.35714C12.1429 0.607746 11.5031 0 10.7143 0H9.28571C8.49687 0 7.85714 0.607746 7.85714 1.35714V7.46429H1.42857C0.639732 7.46429 0 8.07203 0 8.82143V10.1786C0 10.928 0.639732 11.5357 1.42857 11.5357H7.85714V17.6429C7.85714 18.3923 8.49687 19 9.28571 19H10.7143C11.5031 19 12.1429 18.3923 12.1429 17.6429V11.5357H18.5714C19.3603 11.5357 20 10.928 20 10.1786V8.82143C20 8.07203 19.3603 7.46429 18.5714 7.46429Z" fill="#705F5F"/>
+                                </svg>
+                            <img class="if" src="" alt="">
+                            <input name="" type="file" accept="image/*" onchange="loadFill(event)">
+                        </div>
+                        <div class="imb">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5714 7.46429H12.1429V1.35714C12.1429 0.607746 11.5031 0 10.7143 0H9.28571C8.49687 0 7.85714 0.607746 7.85714 1.35714V7.46429H1.42857C0.639732 7.46429 0 8.07203 0 8.82143V10.1786C0 10.928 0.639732 11.5357 1.42857 11.5357H7.85714V17.6429C7.85714 18.3923 8.49687 19 9.28571 19H10.7143C11.5031 19 12.1429 18.3923 12.1429 17.6429V11.5357H18.5714C19.3603 11.5357 20 10.928 20 10.1786V8.82143C20 8.07203 19.3603 7.46429 18.5714 7.46429Z" fill="#705F5F"/>
+                                </svg>
+                            <img class="if" src="" alt="">
+                            <input name="" type="file" accept="image/*" onchange="loadFill(event)">
+                        </div>
+                        
+                        
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="lflex">
+                <div class="ll">
+                    <label for="">Departure On</label>
+                    <input type="date" name="" id="">
+                    <label for="">Return Date</label>
+                    <input type="date"  accept="image/png" name="" id="">
+                </div>
+                <div class="lr">
+                    <div id="cvr">
+                        <textarea placeholder="Tell us more about your trip" name="" id=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Create it</button>
+        </div>
+    </form>
+
+
+
+    <footer>
+        <div class="ufoot">
+            <div id="flog">
+                <img src="./images/Logo-footer.png" alt="">
+            </div>
+            <div class="links">
+                <div id="urbox">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">The Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Testimonies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">BlogTerms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+
+                </div>
+                <div id="ulbox">
+                    <h3>This is to share : </h3>
+                    <div id="icons">
+                        <img src="./images/Group 305.svg" alt="">
+                        <img src="./images/Group 283.svg" alt="">
+                        <img src="./images/Group 285.svg" alt="">
+                        <img src="./images/Group 297.svg" alt="">
+                        <img src="./images/Group 298.svg" alt="">
+                        <img src="./images/Group 299.svg" alt="">
+                        <img src="./images/Group 281-1.svg" alt="">
+                        <img src="./images/Group 281.svg" alt="">
+                        <img src="./images/Group 303.svg" alt="">
+                        <img src="./images/Group 300.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr style="height: 1px;width: inherit; background:#CFCFCF">
+
+        <div id="dis">
+            <h4>© Copyright 2022 - CoGoFly - All rights reserved</h4>
+        </div>
+        
+        
+    </footer>
+</body>
+</html>
